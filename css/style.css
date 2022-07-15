@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url(bg.css);
+@import url(conteudo.css);
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
