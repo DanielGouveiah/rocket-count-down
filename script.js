@@ -3,7 +3,7 @@ const timerHoras = document.querySelector("[data-timer='horas']");
 const timerMinutos = document.querySelector("[data-timer='minutos']");
 const timerSegundos = document.querySelector("[data-timer='segundos']");
 
-const dataFinal = new Date("dec 25 2022");
+const dataFinal = new Date("aug 8 2022");
 const dataAtual = new Date();
 
 const tempoAte = dataFinal.getTime() - dataAtual.getTime();
