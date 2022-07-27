@@ -17,24 +17,23 @@ const timer = {
 };
 
 function formatNumber(num) {
-  if (num < 10) return "0" + num;
-  else return num;
+  return num > 10 ? num : `0` + num;
 }
 
 function timerCont(timer) {
   if (timer.horas === 0 && timer.dias > 0) {
-    timer.dias = timer.dias - 1;
+    timer.dias--;
     timer.horas = 24;
   }
   if (timer.minutos === 0 && timer.horas > 0) {
-    timer.horas = timer.horas - 1;
+    timer.horas--;
     timer.minutos = 60;
   }
   if (timer.segundos === 0 && timer.minutos > 0) {
-    timer.minutos = timer.minutos - 1;
+    timer.minutos--;
     timer.segundos = 60;
   }
-  return (timer.segundos -= 1);
+  return timer.segundos--;
 }
 
 function formatTimer() {
