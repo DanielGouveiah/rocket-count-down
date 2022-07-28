@@ -17,7 +17,7 @@ const timer = {
 };
 
 function formatNumber(num) {
-  return num > 10 ? num : `0` + num;
+  return num >= 10 ? num : "0" + num;
 }
 
 function timerCont(timer) {
